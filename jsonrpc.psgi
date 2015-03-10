@@ -11,6 +11,7 @@ my $app = sub {
         [
             JSON->new->pretty->encode(
                 {
+                    http_method => $req->method,
                     name => "nhayashi",
                     authorization_header => $req->header('Authorization') || "",
                     request_body  => $req->content,
