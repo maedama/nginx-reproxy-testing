@@ -13,7 +13,6 @@ my $app = sub {
                 {
                     name => "nhayashi",
                     authorization_header => $req->header('Authorization') || "",
-                    request_header => $req->headers->as_string,
                     request_body  => $req->content,
                 }
             ),
