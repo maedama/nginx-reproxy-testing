@@ -22,6 +22,7 @@ Make request
 ```
 [ec2-user@localhost]~/gitrepos/nginx-reproxy-testing% ./sample_request 
 {
+    "http_method" : "POST",
     "authorization_header" : "Bearer nhaya",
     "name" : "nhayashi",
     "request_body" : "{  \"id\": 123456, \"foo\": \"var\" }"
